@@ -17,30 +17,24 @@
 </script>
 
 <body class="bg-gray-950 text-white font-sans">
-
   <!-- Navbar -->
-  <!-- Navbar -->
-<header class="bg-gray-900 shadow-lg">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-    <h1 class="flex items-center gap-2 text-2xl font-bold text-orange-500">
-  <img src="assets/logo.png" alt="TheCyberCv Logo" class="w-8 h-8" />
-  TheCyberCv
-</h1>
-<nav class="bg-gray-900 text-white px-6 py-4 flex items-center justify-between">
-  <div class="flex items-center gap-2">
-    <img src="assets/logo.png" alt="Logo" class="h-8 w-8" />
-    <h1 class="text-xl font-bold">TheCyberCv</h1>
-  </div>
-
-  <!-- Hamburger Icon -->
-  <button id="menu-toggle" class="lg:hidden block focus:outline-none">
-    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-      <path d="M4 5h16M4 12h16M4 19h16" />
+<!-- Header -->
+<header class="flex items-center justify-between p-4 bg-white shadow-md sticky top-0 z-50">
+  <!-- Left: Hamburger (Mobile Only) -->
+  <button id="hamburger" class="lg:hidden focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="black" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
     </svg>
   </button>
 
-  <!-- Navigation Links -->
-  <div id="nav-links" class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:gap-6 mt-4 lg:mt-0">
+  <!-- Center Logo & Title -->
+  <div class="flex items-center gap-2">
+    <img src="assets/logo.png" class="h-8 w-auto" alt="logo" />
+    <h1 class="text-xl font-bold text-orange-600">TheCyberCv</h1>
+  </div>
+
+  <!-- Right (Desktop Nav) -->
+  <div class="lg:flex hidden gap-4 items-center">
     <a href="index.html" class="hover:text-orange-400">Home</a>
     <a href="courses.html" class="hover:text-orange-400">Courses</a>
     <a href="blog.html" class="hover:text-orange-400">Blog</a>
@@ -48,7 +42,25 @@
     <a href="contact.html" class="hover:text-orange-400">Contact</a>
     <a href="login.html" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded">Login</a>
   </div>
-</nav>
+</header>
+
+<!-- Fullscreen Mobile Menu -->
+<div id="mobileMenu" class="fixed inset-0 bg-white text-black z-50 hidden flex-col">
+  <div class="flex justify-between items-center px-4 py-3 border-b">
+    <h2 class="text-2xl font-bold text-blue-700">Menu</h2>
+    <button id="closeMenu" class="text-black text-3xl font-bold">&times;</button>
+  </div>
+  <nav class="flex flex-col gap-4 p-6 text-lg">
+    <a href="index.html" class="flex justify-between items-center">Home <span>&#8250;</span></a>
+    <a href="courses.html" class="flex justify-between items-center">Explore Courses <span>&#8250;</span></a>
+    <a href="blog.html" class="flex justify-between items-center">Trending Skills <span>&#8250;</span></a>
+    <a href="#" class="flex justify-between items-center">Explore Roles <span>&#8250;</span></a>
+    <a href="#" class="flex justify-between items-center">Earn a Certificate <span>&#8250;</span></a>
+    <a href="#" class="flex justify-between items-center">CyberCv Plus Programs <span>&#8250;</span></a>
+    <a href="login.html" class="mt-6 text-center bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded">Login</a>
+  </nav>
+</div>
+
 
 <!-- JavaScript Toggle -->
 <script>
@@ -347,6 +359,19 @@
     </div>
   </div>
 </footer>
+<script>
+  const menuBtn = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeBtn = document.getElementById('closeMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+</script>
 
 </body>
 </html>
