@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TheCyberCv | Learn Cybersecurity & IT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+  <!-- Navbar -->
+  <!-- Navbar -->
+<header class="bg-gray-900 shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <h1 class="flex items-center gap-2 text-2xl font-bold text-orange-500">
+  <img src="assets/logo.png" alt="TheCyberCv Logo" class="w-8 h-8" />
+  TheCyberCv
+</h1>
+
+    <nav class="space-x-4 text-sm">
+  <a href="index.html" class="hover:text-orange-400">Home</a>
+  <a href="courses.html" class="hover:text-orange-400">Courses</a>
+  <a href="blog.html" class="hover:text-orange-400">Blog</a>
+  <a href="about.html" class="hover:text-orange-400">About</a>
+  <a href="contact.html" class="hover:text-orange-400">Contact</a>
+  <a href="login.html" class="hover:text-orange-400">Login</a>
+  <a href="signup.html" class="hover:text-orange-400">Sign Up</a>
+</nav>
+
+  </div>
+</header>
+
+  <!-- Hero -->
+<section class="relative w-full h-[500px] overflow-hidden">
+  <img src="assets/cover.png" alt="Cover Image" class="w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-black bg-opacity-50">
+    <div class="absolute top-10 left-1/2 transform -translate-x-1/2">
+      <h2 class="text-3xl md:text-5xl font-bold text-white text-center whitespace-nowrap">
+        <span id="typedText"></span><span class="blinking-cursor">|</span>
+      </h2>
+    </div>
+  </div>
+</section>
+
+<script>
+  const text = "Achieve Your Career Goal With TheCyberCv";
+  let i = 0;
+  const speed = 75;
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typedText").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  window.onload = typeWriter;
+</script>
+
+<style>
+  .blinking-cursor {
+    font-weight: 100;
+    font-size: 2rem;
+    color: orange;
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+</style>
+<!-- Cybersecurity Job Demand Section -->
+<section class="max-w-7xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-10 items-center">
+  <img src="assets/cyber-demand.png" alt="Cyber Job Demand" class="rounded-xl shadow-lg" />
+  <div>
+    <h3 class="text-3xl font-bold text-orange-500 mb-4">Exploding Demand for Cybersecurity Experts</h3>
+    <p class="text-gray-300 text-sm">
+      Over 3.5 million cybersecurity jobs will go unfilled globally by 2026. Start now and prepare for one of the highest-paying IT careers.
+    </p>
+  </div>
+</section>
+
+<!-- Inspirational Skills Section -->
+<section class="bg-gray-900 py-16 px-4 text-center">
+  <h3 class="text-3xl font-bold mb-10 text-orange-500">Invest In Your Cyber Journey</h3>
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-left text-gray-300">
+
+    <!-- Card 1 -->
+    <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+      <img src="assets/icons/skills.svg" class="w-12 h-12 mb-4" />
+      <h4 class="text-lg font-semibold text-white mb-2">Explore new skills</h4>
+      <p>Access to 10+ Red Teaming, Blue Teaming, GRC and Purple Teaming courses.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+      <img src="assets/icons/certificate.svg" class="w-12 h-12 mb-4" />
+      <h4 class="text-lg font-semibold text-white mb-2">Earn valuable credentials</h4>
+      <p>Get certificates for every course and boost your job chances at no extra cost.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+      <img src="assets/icons/coach.svg" class="w-12 h-12 mb-4" />
+      <h4 class="text-lg font-semibold text-white mb-2">Learn from the best</h4>
+      <p>Expert-led lessons with Nexus Coach — your AI-powered cyber mentor.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Student Achievement Section -->
+<section class="max-w-7xl mx-auto py-16 px-4">
+  <h3 class="text-2xl font-bold text-center text-orange-400 mb-10">What Our Learners Say</h3>
+  <div class="grid md:grid-cols-3 gap-6 text-sm text-gray-300">
+
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center">
+      <img src="assets/students/rahul.jpg" alt="Rahul" class="mx-auto w-20 h-20 rounded-full mb-3">
+      <h4 class="font-semibold text-white">Rahul Singh</h4>
+      <p class="text-sm italic mt-1">"TheCyberCv helped me crack my first SOC Analyst job in just 3 months!"</p>
+      <p class="text-yellow-400 mt-2">★★★★★</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center">
+      <img src="assets/students/anjali.jpg" alt="Anjali" class="mx-auto w-20 h-20 rounded-full mb-3">
+      <h4 class="font-semibold text-white">Anjali Mehta</h4>
+      <p class="text-sm italic mt-1">"Got certified in 2 tracks & joined a consulting firm!"</p>
+      <p class="text-yellow-400 mt-2">★★★★☆</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center">
+      <img src="assets/students/amir.jpg" alt="Amir" class="mx-auto w-20 h-20 rounded-full mb-3">
+      <h4 class="font-semibold text-white">Amir Hussain</h4>
+      <p class="text-sm italic mt-1">"Loved the structure and the Nexus Coach support. Brilliant!"</p>
+      <p class="text-yellow-400 mt-2">★★★★★</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="bg-gray-900 py-16 px-4">
+  <h3 class="text-2xl font-bold text-center mb-6 text-orange-400">Frequently Asked Questions</h3>
+  <div class="max-w-3xl mx-auto text-gray-300">
+
+    <div class="mb-4 border-b border-gray-700">
+      <button onclick="toggleFaq(1)" class="w-full text-left py-3 font-semibold text-white">
+        Do I need technical background to start?
+      </button>
+      <div id="faq1" class="hidden pl-2 pb-3 text-sm">Not at all! Our beginner programs start from scratch and build your foundation step by step.</div>
+    </div>
+
+    <div class="mb-4 border-b border-gray-700">
+      <button onclick="toggleFaq(2)" class="w-full text-left py-3 font-semibold text-white">
+        Do I get a certificate?
+      </button>
+      <div id="faq2" class="hidden pl-2 pb-3 text-sm">Yes, every course comes with a digital certificate you can showcase on your resume or LinkedIn.</div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function toggleFaq(n) {
+    const div = document.getElementById("faq" + n);
+    div.classList.toggle("hidden");
+  }
+</script>
+
+
+  <section class="bg-gradient-to-r from-orange-600 to-orange-700 py-20 text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Master Cybersecurity & IT Skills</h2>
+    <p class="text-lg mb-6 max-w-2xl mx-auto">Beginner to pro: Learn ethical hacking, networking, and more with real-world labs and expert guidance.</p>
+    <a href="courses.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition mt-8">
+  Explore Courses
+</a>
+
+  </section>
+
+  <!-- Featured Courses -->
+  <section class="max-w-7xl mx-auto py-12 px-4">
+    <h3 class="text-2xl font-bold mb-6">🔥 Popular Courses</h3>
+    <div class="flex space-x-6 overflow-x-auto scrollbar-hide">
+      <div class="min-w-[280px] bg-gray-800 p-4 rounded-xl hover:scale-105 transition-transform">
+        <img src="assets/thumbnails/course1.jpg" alt="Course 1" class="rounded mb-3 w-full h-40 object-cover" />
+        <h4 class="font-bold text-lg">Beginner Cybersecurity Bootcamp</h4>
+        <p class="text-sm text-gray-400 mt-1">Start your ethical hacking journey from scratch.</p>
+      </div>
+      <div class="min-w-[280px] bg-gray-800 p-4 rounded-xl hover:scale-105 transition-transform">
+        <img src="assets/thumbnails/course2.jpg" alt="Course 2" class="rounded mb-3 w-full h-40 object-cover" />
+        <h4 class="font-bold text-lg">Network Fundamentals</h4>
+        <p class="text-sm text-gray-400 mt-1">Subnetting, TCP/IP, OSI model and protocols simplified.</p>
+      </div>
+      <div class="min-w-[280px] bg-gray-800 p-4 rounded-xl hover:scale-105 transition-transform">
+        <img src="assets/thumbnails/course3.jpg" alt="Course 3" class="rounded mb-3 w-full h-40 object-cover" />
+        <h4 class="font-bold text-lg">Linux for Security Professionals</h4>
+        <p class="text-sm text-gray-400 mt-1">Learn bash, terminal navigation, and Linux hardening.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="bg-gray-900 py-12 px-4 text-center">
+    <h3 class="text-2xl font-bold mb-6">📚 Course Categories</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto text-sm font-medium">
+      <div class="bg-orange-600 py-3 rounded shadow hover:opacity-90">Cybersecurity</div>
+      <div class="bg-orange-600 py-3 rounded shadow hover:opacity-90">Ethical Hacking</div>
+      <div class="bg-orange-600 py-3 rounded shadow hover:opacity-90">Networking</div>
+      <div class="bg-orange-600 py-3 rounded shadow hover:opacity-90">Linux & Shell</div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-12 px-4 text-center">
+    <h3 class="text-2xl font-bold mb-6">Why Choose TheCyberCv?</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div>
+        <h4 class="font-semibold text-lg mb-2 text-orange-400">🚀 Career Focused</h4>
+        <p class="text-sm text-gray-300">Courses tailored for roles like SOC Analyst, Pentester, and more.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg mb-2 text-orange-400">📚 Beginner Friendly</h4>
+        <p class="text-sm text-gray-300">No prior experience? We guide you from basics to advanced.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg mb-2 text-orange-400">🌐 Real-World Content</h4>
+        <p class="text-sm text-gray-300">Updated labs, case studies, and tools aligned with the latest threats.</p>
+      </div>
+    </div>
+  </section>
+<section class="bg-gray-950 py-16 px-4 text-center">
+  <h3 class="text-3xl font-bold text-orange-500 mb-8">Plans For You & Your Team</h3>
+  <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-6 text-left text-sm">
+    
+    <!-- Single Plan -->
+<div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+  <h4 class="text-lg font-semibold text-orange-400 mb-2">Single Learning Program</h4>
+  <p class="text-gray-300 mb-2">₹1999/-</p>
+  <p class="text-gray-400 text-sm mb-4">Visit an individual course or Specialization to purchase.</p>
+  <button class="bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded text-white font-semibold w-full">Buy Now</button>
+</div>
+
+<!-- Monthly -->
+<div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+  <h4 class="text-lg font-semibold text-orange-400 mb-2">CyberCv Plus - Monthly</h4>
+  <p class="text-gray-300 mb-2">₹999/- per month</p>
+  <ul class="text-sm text-gray-400 mb-3 list-disc list-inside">
+    <li>Job-relevant skills & tools</li>
+    <li>1,000+ labs & projects</li>
+    <li>Start free 7-day trial</li>
+  </ul>
+  <p class="text-xs mb-2">Cancel anytime</p>
+  <button class="bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded text-white font-semibold w-full">Start Free 7-Day Trial</button>
+</div>
+
+<!-- Annual -->
+<div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+  <h4 class="text-lg font-semibold text-orange-400 mb-2">CyberCv Plus - Annual</h4>
+  <p class="text-gray-300 mb-2">₹9999/- per year</p>
+  <ul class="text-sm text-gray-400 mb-3 list-disc list-inside">
+    <li>All Monthly Features</li>
+    <li>Pay once, save more</li>
+  </ul>
+  <p class="text-xs mb-2">14-day money-back guarantee</p>
+  <button class="bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded text-white font-semibold w-full">Try CyberCv Plus Annual</button>
+</div>
+
+<!-- Teams -->
+<div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+  <h4 class="text-lg font-semibold text-orange-400 mb-2">CyberCv for Teams</h4>
+  <p class="text-gray-300 mb-2">₹4999/- per user (12 months)</p>
+  <ul class="text-sm text-gray-400 mb-3 list-disc list-inside">
+    <li>Progress tracking</li>
+    <li>Group dashboard access</li>
+  </ul>
+  <button class="bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded text-white font-semibold w-full">Contact Sales</button>
+</div>
+
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 text-sm pt-10">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8 px-4 pb-10">
+
+    <div>
+      <h4 class="font-bold text-orange-400 mb-2">Company</h4>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:underline">Careers</a></li>
+        <li><a href="#" class="hover:underline">Affiliates</a></li>
+        <li><a href="#" class="hover:underline">Investors</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-orange-400 mb-2">Resources</h4>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        <li><a href="#" class="hover:underline">Help & Support</a></li>
+        <li><a href="#" class="hover:underline">Job Bootcamps</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-orange-400 mb-2">Skills</h4>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:underline">Technical Skills</a></li>
+        <li><a href="#" class="hover:underline">Business Skills</a></li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col items-start">
+      <h4 class="font-bold text-orange-400 mb-2">Get the App</h4>
+      <img src="assets/google-play.png" alt="Download on Google Play" class="w-36" />
+    </div>
+  </div>
+
+  <div class="border-t border-gray-700 py-6 px-4 flex flex-col md:flex-row justify-between items-center text-center">
+    <p>© 2025 TheCyberCv. All rights reserved.</p>
+    <div class="flex space-x-4 mt-4 md:mt-0">
+      <a href="#" class="hover:text-orange-400">Facebook</a>
+      <a href="#" class="hover:text-orange-400">LinkedIn</a>
+      <a href="#" class="hover:text-orange-400">Twitter</a>
+      <a href="#" class="hover:text-orange-400">GitHub</a>
+      <a href="#" class="hover:text-orange-400">YouTube</a>
+      <a href="#" class="hover:text-orange-400">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

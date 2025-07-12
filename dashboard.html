@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TheCyberCv | Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 0.6s ease-in-out both;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+  <!-- Sidebar Layout -->
+  <div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-900 p-6 hidden md:block">
+      <h2 class="text-2xl font-bold text-orange-500 mb-8">TheCyberCv</h2>
+      <nav class="space-y-4 text-sm">
+        <a href="#" class="block text-gray-300 hover:text-orange-400">📚 My Courses</a>
+        <a href="#" class="block text-gray-300 hover:text-orange-400">📝 Assignments</a>
+        <a href="#" class="block text-gray-300 hover:text-orange-400">📊 Progress</a>
+        <a href="#" class="block text-gray-300 hover:text-orange-400">📅 Schedule</a>
+        <a href="#" class="block text-gray-300 hover:text-orange-400">💬 Messages</a>
+        <a href="#" class="block text-gray-300 hover:text-orange-400">⚙️ Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 md:p-10 bg-gradient-to-br from-gray-900 to-black fade-in">
+      
+      <!-- Top Greeting -->
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <h1 class="text-3xl font-bold text-orange-500">Welcome back, Student 👋</h1>
+          <p class="text-sm text-gray-400 mt-1">Keep pushing forward. Your learning journey continues today.</p>
+        </div>
+        <img src="assets/avatar.png" alt="User Avatar" class="w-12 h-12 rounded-full border-2 border-orange-500" />
+      </div>
+
+      <!-- Progress Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div class="bg-gray-800 rounded-xl p-4 shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-semibold mb-2">Cybersecurity for Beginners</h3>
+          <div class="h-2 bg-gray-700 rounded-full">
+            <div class="w-3/4 h-2 bg-orange-500 rounded-full"></div>
+          </div>
+          <p class="text-xs text-gray-400 mt-1">75% complete</p>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-4 shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-semibold mb-2">Linux Essentials</h3>
+          <div class="h-2 bg-gray-700 rounded-full">
+            <div class="w-1/2 h-2 bg-orange-500 rounded-full"></div>
+          </div>
+          <p class="text-xs text-gray-400 mt-1">50% complete</p>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-4 shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-semibold mb-2">Web App Hacking</h3>
+          <div class="h-2 bg-gray-700 rounded-full">
+            <div class="w-1/4 h-2 bg-orange-500 rounded-full"></div>
+          </div>
+          <p class="text-xs text-gray-400 mt-1">25% complete</p>
+        </div>
+      </div>
+
+      <!-- Today’s Learning Section -->
+      <div class="bg-gray-900 rounded-xl p-6 shadow">
+        <h2 class="text-xl font-bold mb-4 text-orange-400">📅 Today’s Task</h2>
+        <ul class="space-y-3 text-sm text-gray-300">
+          <li>✅ Watch "Introduction to Network Layers"</li>
+          <li>🟠 Complete Linux command quiz (pending)</li>
+          <li>📥 Download latest course material (Module 4)</li>
+        </ul>
+        <button class="mt-4 px-4 py-2 bg-orange-600 hover:bg-orange-700 rounded text-sm text-white">Continue Course</button>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
